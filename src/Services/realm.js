@@ -1,8 +1,8 @@
 import Realm from 'realm';
-import TrainingSchema from '../schemas/TrainingSchema';
+import AllSchemas from '../schemas/AllSchemas';
 
 export default function getRealm() {
   return Realm.open({
-    schema: [TrainingSchema],
+    schema: [AllSchemas],
   });
 }

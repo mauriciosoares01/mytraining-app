@@ -30,7 +30,7 @@ const Home = () => {
   useEffect(() => {
     async function loadTrainnigs() {
       const realm = await getRealm();
-      const data = realm.objects('Training');
+      const data = realm.objects('training');
       setTrainings(data);
     }
 
@@ -45,7 +45,7 @@ const Home = () => {
 
     const realm = await getRealm();
     realm.write(() => {
-      realm.create('Training', data);
+      realm.create('training', data);
     });
   }
 
@@ -63,7 +63,6 @@ const Home = () => {
         keyExtractor={item => String(item.id)}
         renderItem={({item}) => <Card label={item.name} />}
       />
-      <Card />
       <Modal
         isVisible={modalVisibility}
         onBackdropPress={() => setVisibility(!modalVisibility)}
