@@ -18,6 +18,7 @@
     "react-navigation-stack": "^1.10.3",
     "realm": "^3.4.0",
     "styled-components": "^4.4.1",
+    "ws": "^7.2.0",
     "yarn": "^1.19.1"
   },
   "devDependencies": {
